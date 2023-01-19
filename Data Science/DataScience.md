@@ -1,8 +1,9 @@
-# Data Science
+# Data Science 
+*Date Last Locally Modified: January 17, 2023*
 # [Learn Data Science Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=ua-CiDNNj30) by freeCodeCamp.org
 
 
-*~Date: Jan 16, 2023~*
+*Date: Jan 16, 2023*
 # Introduction to Data Science
 **Tools:** coding, statistics and math
 >**Goal of Data Science:** 
@@ -690,9 +691,508 @@ DataKind.org
 > Data science is democratic.
 
 
-
-# Data Sourcing 1:39:44
+*Date: 1/18/2023*
+# Data Sourcing
 *with Barton Poulson*
 > **Data Opus** 
 > - Data Needed
 > - No data. No Data Science
+
+Methods for...
+* measuring and evaluating data
+* accessing existing data
+* creating new custom data
+
+## Metrics
+> Know your target
+
+**Goals**
+
+* **Action** - Goal is to do something
+* **Explicit** - Goals can guide effort
+* **Client** - can help you prevent frustration. They know what you are working on
+* **Analyst** - Goal exist for the benefit of analyst since they help you use your  time well
+
+### Define sucess
+- in your particular project or domain
+- ex. Commerce, Education, GOvernment Research
+- each domain has differents tandard of sucess
+
+### Metrics
+- Business metrics
+- Key Performance Indicators (KPIs)
+- SMART goals
+- Multiple goals
+
+
+#### Business metrics
+Common ways of measuring sucess:
+1. **Sales revenue** - are you making more money
+2. **Leads generated** - new customers or potential customers since associated with future sales
+3. **Customer value** - you may have small number of customers but they have a lot of revenue. Useful in predictg overall profitability
+4. **Churn rate** - losing and gaining customers and having turnover
+
+#### Key Performance Indicators (KPIs)
+- **Non-Financial** - something that mearsures overall productivity
+- **Timely** - weekly, daily, constantly gathered info
+- **CEO focus** - senior management team affects how the organization act on the KPIs
+- **Simple** - everyone can understand it
+- **Team-based** - so they can take joint responsibility in meeting each KPIs
+- **Significant impact** - should have more than one important outcome. A and B
+- **Limited dark side** - fewer possibility in reinforcing wrong behavior and rewarding people in exploiting the system
+
+
+#### SMART goals
+- Specific 
+- Measurable  
+- Assignable - to a particular person 
+- Realistic - you can actually do it with resources you have at hand
+- Time-Bound - so you know when it can get done
+> Assess goal on each of the criteria. Good way to check if the goal to be used as a metric of sucess of organization.
+#### Multiple goals
+Tricky since
+* easy to focus on one.
+* hard to focus on many
+* goals may conflict
+* hence we need to optimize
+
+#### In sum:
+- Metrics help awareness
+- Many methods available for defining success and measuring progress
+- Balance multiple goals
+
+### Accuracy
+Don't waste effort
+
+> One way to do this in a very quantitative fashion is to **make classification table**
+
+<img src="Note%20Images/Classification%20Table%201.png" alt="drawing" style="height:200px;"/>
+
+Four kinds of quantifying accuracy using diffrent standards:
+- Sensitivity
+- Specificity
+- Positive predictive value
+- Negative predictive value
+
+#### Sensitivity
+$$\dfrac{True\ positives}{Total\ present}$$
+
+*If there's a fire, does the alarm ring?* You want this to alway happen
+$Test\ Positive$ - there's an alarm
+
+$Event\ present$ - there's a fire
+
+$$\dfrac{True\ positives}{Total\ number\ of\ alarms}$$
+
+#### Specificity
+$$\dfrac{True\ negatives}{Total\ absent}$$
+
+*If there isn't a fire, does the alarm stay quiet?* 
+$Test\ Positive$ - no alarm
+
+$Event\ absent$ - no fire 
+
+no fire and the alarm is not ringing is what you waant
+
+#### Positive predictive value
+$$\dfrac{True\ positives}{Total\ positives}$$
+
+*If the alarm rings, was there a fire?* 
+$True\ positives$ - there's a fire
+
+$Total\ positives$ - any time the alarm rings
+
+
+#### Negative predictive value
+$$\dfrac{True\ negatives}{Total\ negatives}$$
+
+*If the alarm doesn't ring, is there NO fire?*
+
+$True\ positives$ - there's NO fire
+
+$Total\ positives$ - any time the alarm doesn't ring
+
+> Maximize each one as much as you can
+
+#### In sum:
+- Four kind of accuracy
+- Different focus for each
+- But the same overall goal: *identify* true positives and true negatives, and *avoid* false positives and false negatives
+
+### Social context of measurement
+*People are people*
+
+>People can affect measurement
+
+#### Business model
+*An organization's business model is tied to its identity or reson to be.*
+
+#### Restrictions
+*Laws, policies, and common practices may limit the ways goals can be met.* You cannot do anything you want. You need to have constraints. Behave legally and ethically
+
+#### Environemt
+*Competition occurs both between organizations as well as within.* Office politics. Recommendations need to play well in the office in order for it to have maximum effectiveness.
+
+#### Manipulation
+*Any reward system will be exploited and people will game the system.* 
+
+> Don't give up. Just be aware of these particular issues.
+
+#### In sum
+- Social factors affect goals.
+- Limits and consequences
+- Be sensitive with metrics and how people will adapt
+
+## Existing Data
+- easiest way to get data: in-house data, open data, & third-party data
+
+1. Proprietary - in-house data
+2. Public - open data
+3. Purchased - third-party data
+
+### In-house
+- can be fast and easy - may already be in the organization
+- format maybe appropriate for the software you are using
+- documentation - maybe good
+- quality control - you don;t know how opeople gathered it
+- restrictions - you may not publish or you may not be allowed to use it
+
+| Pros | Cons |
+|-|-|
+|Potentially quick, easy & free|May not exist|
+|May be standardized|Documentation may be inadequate|
+|Original team who gathered it may still be there|Quality may be unertain|
+|May have identifiers in the data which can allow you to have individual level analysis||
+
+
+### Open data
+- Prepared data that's freely available
+- Government data
+- Corporate Data
+- Scientific Data
+
+#### Examples
+* [US government open data](data.gov)
+* [UNICEF](unicef.org/statistics)
+* [World Health Organization](who.int/gho)
+* [PewResearchCenter](pewinternet.org/datasets)
+* [New York Times](developer.nytimes.com)
+* [Google Public Data](google.com/publicdata)
+* [Amazon AWS Public Data Stes](aws.amazon.com/datasets)
+
+| Pros | Cons |
+|-|-|
+|Valuable Data Sets|Biased Samples|
+|Range of topics, times, groups, etc| Meaning may not be clear|
+|Well-formatted & well-documented|May need to share analyses|
+||Issues with privacy and confidentiality. NO identifiers|
+### Third-party data
+- Data-as-aService (DaaS)
+- Data brokers
+- Can provide many topics
+- May process data for you
+
+#### Examples
+* [Acxiom](acxiom.com)
+* [nielsen](nielsen.com)
+* [DATASIFT](datasift.com)
+
+| Pros | Cons |
+|-|-|
+|Save time and effort|can be expensive|
+|Individual level. Can provide identifiers|Still need to validate if it is what you want|
+|Can get summaries and inferences|Distasteful to many people|
+
+### In Sum
+- Data science needs data
+- 3 P's of data sources
+- Pay attention to quality and usability of data
+ to help you along in your projects
+
+ ## APIs
+ APIs have heard apps singing each to each
+
+ ### API basics
+ - Application Programming Interface
+ - Allow programs to talk to each other
+ - Get web data - API allows your program to directly get web on it's own grab the data and bring it back in
+
+#### REST API
+- most common API
+- Representational State Transfer
+- access data on web via HTTP
+- Data in JSON format
+- Send to other programs
+- Lanugage agnostic - any programming langugae can send  and get data
+
+### Kind of APIs
+|Social APIs|Visual APIs|
+|-|-|
+|Facebook|Google Maps|
+|Twitter|YouTube|
+|Google Talk|AccuWeather|
+|FourSquare|Pinterest|
+|SoundCloud|Flickr|
+
+> You can pull in data from any of these sites and integrate it to you own site or to you data analysis
+### Programs that can be used
+- R
+- Python
+- Bash
+- Etc.
+
+<img src="Note%20Images/Dataquest%20API.png" alt="drawing" style="height:200px;"/>
+
+### In sum:
+- APIs make web data easy
+- Straight into programs
+- Great for data science
+
+## Scraping
+Data hinding into open. Pull information from webpages
+
+### Formats:
+- HTML text
+- HTML tables
+- PDFs
+- Media
+
+> Pay attention to copyright & privacy. Make sure it's publicly available
+
+### Formats
+|Apps|Code|
+|-|-|
+|import.io|R|
+|ScraperWiki|Python|
+|Tabula|Bash|
+|Google Sheets|Java|
+|Excel|PHP|
+
+> Look for information in the webpage
+
+### HTML Text 
+- Pull structured text from web pages
+- use HTML tags
+- \<body>,\<h1>,\<p>
+### HTML Table
+- HTML table tags
+- \<table>,\<tr>,\<td>
+- Need table  number which can be found by trial and Error
+
+#### Example
+* In a Wiki Page, you may find a table
+<img src="Note%20Images/HTML%20Table%201.png" alt="drawing" style="height:400px;"/>
+* To pull it you may use Google sheet. *Poke around to get the number of table*
+<img src="Note%20Images/HTML%20Table%202.png" alt="drawing" style="height:400px;"/>
+```
+=IMPORTHTML("https://en.wikipedia.org/wiki/Iron_Chef_America","table",2)
+```
+
+#### You may also scrape from PDFs
+- Be aware if its Native (text) or scanned
+- Text elements
+-Raster/ vectore images
+-Tabualr data - but you may have to use speciallized program like Scraperwiki to get taht
+
+### Media
+- Images, video, audio
+- Gettimg images easy
+- Reas data by looping pixel by pixel
+
+### In sum:
+- If no APIs, try scraping
+- USe apps or code
+- Be sensitive Copyright and privacy
+ ## Creating New Data
+(Data ne novo* - new data
+
+### Strategies
+|Role?|Q/Q?|How?|
+|-|-|-|
+|Passive|Quantitative|Online|
+|Active|Qualitative|In person|
+
+### Options
+* Interterview
+* Surveys
+* Card sorting
+* Experiments
+
+### Experiments
+Laboratory
+- In-person projects where you shape information or an experience
+
+A/B Testing
+- Automated, online testing of two or more variations on a webpage.
+
+#### In sum
+- When you create data, you get exactly what you need
+- If you can't find it, make it.
+- Many possible methods.
+
+### Interviews
+a conversation with another person or group 
+
+#### Why do interview?
+1. You are working with a new topic
+2. You are working with a new audience
+3. You need to find ways to improve
+
+> You don't want to constrain responses.
+
+#### Types
+|Structured|Unstructured|
+|-|-|
+|You have **predetermined** set of questions; everyone gets the same questions in the same order|Much more like a conversation where questions arise in response to answers; different for each person|
+
+> Can be done in person, phone, or online
+
+*Date: 01/19/2023*
+#### Keep in mind 2:17:20
+- Time - can range from minutes to hour per person
+- Training - special skill that requires specific training
+- Analysis - Hardest part is analyzing answers for themes
+
+> Yuu can learn thing you never expected.
+
+#### In sum:
+- Interviews are best for new situations
+- It can be time-consuming
+- May need special training for conducting and analyzing data
+
+### Card sorting
+YOu are trying to build **mental model**, model of people's meantal structures.
+
+####  Basic Procesure
+* Write topics on cards
+* Physical or digital
+* People sort cards
+* Dissimilarity data -Take that information and get this
+
+#### Kind of card sorting task
+|Generative |Evaluative|
+|-|-|
+|Respondents create own sets using any number of groupings;used to design websites|Fixed number or names of categoriesl see uf navigation make sense to people.|
+
+#### Dendogram
+You'll end up with this visualization of the pieces of information
+<img src="Note%20Images/Dendogram%201.png" alt="drawing" style="height:200px;"/>
+
+#### Tools
+* Optimal Workshop
+* UserZoom
+* UX Suite
+
+#### In Sum:
+- Card sorting allows us to see intuitive organization in heirarchal format
+- We can do it with Physical and digital tools/choices
+- In the end, you'll end up with a Hierarchical visualization. How information are structured and related to each other.
+
+### Laboratory experiments
+Goal is to know cause and effect.
+
+> Researchers play active roles in experiments with **manipulations**.
+
+#### Experiments
+- Focused research
+- Hypothesis driven
+- Random assignment
+- Confounds & artifacts - minimized by randomization
+
+ex.
+Eyetracking in web design, research in medicine, education and physchology.
+
+> Experimental research is the goald standard for reliable valid information for cause and effects
+
+#### However it comes at a cost
+1. Requires extensive specialized training
+2. Often time-consuming and labor intensive
+3. Can be very expensive
+
+#### In sum
+- Laboratory experiment is the best method for causality
+- controls for confounds
+- can be difficult to do
+
+### A/B testing
+extremely common in the web world
+
+#### Here's how it work
+1. Create multiple versions - usually A and B or more
+2. Randomly assign it to visitors
+3. Compare response rates
+4. Implement best variation
+
+#### Response rates
+You may look into 
+- time on page
+- mouse tracking 
+- click-throughs
+- shopping cart value
+- abandonment
+
+> contributes to Website optimization. To make it as effective as it can be
+
+> It is performed continually.
+
+> A/B Testing = Always be testing
+
+#### Tools
+* Optimizely
+* VWO - Visual Web Optimizer
+
+#### When you get the data...
+You can use statistical hypothesis testing, and may want to adjust parameters.
+
+#### In sum
+- website experimentation
+- Optimize design
+- continual Assessment
+
+### Survey
+Just ask
+
+> Do you know your topic and audience well enough to anticipate answers? YEs? Use survey
+
+#### Types
+- Closed ended
+- Open eneded
+- In perosn
+- Online
+
+#### Tools
+- SurveyMonkey
+- Qualtrics
+- Google Forms
+- Typeform
+
+#### Pros and cons
+|Easy to do| And do badly|
+|-|-|
+|Very easy to set up survey and send out to large groups of people|Questions can be ambiguous and response scales confusing|
+
+> Meaning should be clear and unambiguoi=us
+
+#### Beware the pushpoll
+a biased attempt. Pushes on one answer
+
+> Watch out for bias, in question wording, response options, and sample selection.
+
+#### In sum
+- Get lots of data quickly
+- requires familiarity with possible answer of audience. 
+- watch for bias
+
+# Next Steps
+Don't just sit there!
+
+* **See what you already have**
+* **Explore some open data sources**
+* **If it helps, check a few data vendors**
+* **Consider making data**
+
+> Get what you need and get going!
+
+
+# Coding in Data science 2:32:46
+with Barton Poulson
