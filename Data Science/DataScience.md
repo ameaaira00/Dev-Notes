@@ -1193,6 +1193,426 @@ Don't just sit there!
 
 > Get what you need and get going!
 
-
-# Coding in Data science 2:32:46
+01/20/2023
+# Coding in Data science
 with Barton Poulson
+
+> Know your tools and know their proper place.
+
+## Data Tools
+Data tools is a subset of Data science
+
+- Spreadsheets
+- Tableau - data visualization program
+- Web data - format used 
+
+### Essentials
+- R
+- Python
+- SQL
+
+### ...and others
+- C, C++, Java
+- Bash
+- Regex
+
+> Don't forget the 80/20 rule or Pareto Principle
+> Acomplishment of cumulative effectiveness. Only get the nth tools that is 20% of your the put
+
+> You don't nexessarily need to learn everything. **Focus on the tools that will be the most productive for you**.
+
+### In sum
+- Coding is important
+- Data science is greater than the collection of tools used in it
+- Remember 80/20 rule when deciding what tools to use. You'll get a lot of bang in small set of tools.
+
+## Applications
+### Spreadsheets
+It can be the right tool for Data science in a lot of circumstances
+- They're everywhere
+- Client's format
+- Data tramsfer - csv is the universal format
+- Easy to use
+
+<img src="Note%20Images/Tools%20Ranking%201.png" alt="drawing" style="height:200px;"/>
+
+#### Uses
+- Good for data browsing
+- sorting
+- rearranging
+-finding and replacing
+- formatting
+- transposing data
+- tracking changes
+- making pivot tables - explore data
+- arranging output for consumption
+
+#### Be concerened with Tidy data
+- **Tidy data** for transferring data. Tidy it into format that really easy to import from one program to another
+- `Column` == `variable`
+- `Row` == `case`
+- One sheet per file
+- One level per file
+
+
+#### In sum
+- You need spreadsheets
+- The right tool for DS
+- Tidy Data for exporting
+
+### Tableau Public
+visualization program
+
+> First look. see what you have
+
+Go to [tableau.com](tableau.com) and go to Tableau Public, free version. File is saved in the web in public form.
+
+This can be used to create graphics out of data (usually a tidy data in Excel/Spreadsheets)
+
+<img src="Note%20Images/Tableau%201.png" alt="drawing" style="height:200px;"/>
+- can do average, forecast, etc.
+
+
+### SPSS - Statistical Package for the Social Sciences
+[ibm.com/spss](ibm.com/spss)
+A desktop program used in academics, medical and business research. Like a spreadsheet but has dropdown menu.
+
+- has lot of hidden datasets
+- `.sav` dataset files
+- Can do Point-and-Click analysis
+
+### JASP - Just Another Statistics Program
+Free version of SPSS. Open Source.
+
+[jasp-stats.org](jasp-stats.org) - Note: still Beta
+
+Also, we can share it to [Open Science Framework](osf.io)
+
+### Other software
+There are so many choices
+
+- SAS - expensive
+- SAS University Edition - free
+- JMP - visualization software
+- STATA
+- Minitab
+- MATLAB
+- Mathematica
+- WolframAlpha
+- RapidMiner
+- KNIME
+- Orange
+- BigML
+- SOFA Statistics - Statistics Open For All
+- Past 3
+- StatCrunch
+- XLSTAT - within excel environment it self
+
+> Use what best works for you
+
+### What to consider in choosing tools
+- Functionality
+- Ease of use
+- existence of a Community
+- Cost
+
+> Don't forget the 80/20 rule. You can do a lot with few tools
+### In sum:
+- Applications are tools
+- Goals drive choice
+- What works for *you*?
+
+## Web data
+### HTML - Hyper Text Markup Language 
+- Make the World wide web go round.
+- A text document that uses tags to define structure of document 
+- Cascading Style Sheet (CSS) gives appearance of a web page
+> If you want to extract information from the web, you need to understand how the web is structured.
+#### In sum:
+- The web runs on HTML
+- HYML defines page structure
+- Navigate to get data
+
+### XML - eXtensible Markup Language
+- Data, defined thyself
+- XML is semi-structured data: 
+- Tags define data, but tags are free. You can define it anywhere you want. ex. `<genre><\genre>`,`<circuit><\circuit>`
+- Tags use opening anc closing angle brackets like HTML 
+**Uses**
+- Web data
+- Microsoft Office
+- iTunes library
+- Data files
+
+#### Easy Convert between formats
+1. XML to CSV
+2. HTML to XML
+3. CSV to XML
+
+#### In sum:
+- XML is semi-structured data: 
+- common for web data
+- easy to translate fromat back in forth
+
+### JSON - Java Script Object Notation
+- smaller, better
+- semi-structured data like XML
+- gradually taking XML's place
+- easy to convert
+
+|XML|JSON|
+|-|-|
+|Markup Language that gives meaning to text|Designed for data interchange|
+|Allows comments and metadata in tags|Corresponds with data structures|
+||Typically shorter thatn XML|
+
+
+[JSON helpful tool to structure unorganize data](jsonprettyprint.com)
+
+#### In sum:
+- JSON is semi-structured
+- designed for data interchange
+- replacing XML on web as container for data in web pages
+
+## Languages
+### R
+- Free and open source
+- Specially developed for vector operations
+- has great community
+- 7000+ packages, can do anything
+- ... hence its popularity
+
+<img src="Note%20Images/Tools%20Ranking%202.png" alt="drawing" style="height:200px;"/>
+
+#### Interfaces
+- R comes with its own IDE
+- TErminal can also be used
+-[RStudio.com](RStudio.com)
+- Jupyter
+- R is all command line
+
+#### Comamnds
+- can enter in console
+- save scropts and run selectively
+- Idiosyncratic model - R is a little weird. It has slightly different format than the other programming languages
+
+#### Details
+- Graphs in separate window
+- Text and numbers in console
+- Can save output to files. POrtable
+
+#### Packages
+R has packages to expand its capabilities
+- There are two sources
+
+|CRAN|Crantastic!|
+|-|-|
+|Comprehensive R Archive Network||
+|[cran.rstudio.com](cran.rstudio.com)|[crantastic.org](crantastic.org)|
+|Task views|Shows popularity and updates|
+|Datsets, manual and vignettes||
+
+#### In sum:
+- R is the language of Data science
+- command line interface
+- thousands of packages are available
+
+### Python
+A language that can do it all
+- General purpose. Easy to use
+- Built-in on Mac/Linux
+- Great community
+- Thousand of packages 
+
+<img src="Note%20Images/Tools%20Ranking%203.png" alt="drawing" style="height:200px;"/>
+
+#### Details
+|||
+|-|-|
+|Version:| Both 2.x & 3.x|
+|Problem:|Compatibility|
+|And so:|Many use 2.x since most Data science packages use 2.x|
+
+#### Interface
+- Python's IDLE
+- Terminal/IDE
+- Jupyter/IPython
+- Two companies that made special distributions of Python to make it easy to use with data: **Continuum Anaconda** & Enthough Canopy
+- All command line. Lines of code
+
+#### Commands
+- text interface
+- Python is familiar to millions of coders
+- Simple adaptations for data
+
+> Data science loves Jupyter
+- Text output and markdown
+- Inline graphics
+- Easy to organize and present
+
+#### Packages: 
+- PyPi
+- NumPy and SciPy
+- Matplotlib & Seaborn
+- Pandas
+- scikit-learn
+
+#### In sum
+- Python is popular and familiar
+- general purpose
+- thousands of packages
+
+### SQL - Structured Query Language
+- Language of databases. That's where the data is
+- SQL is a language
+- For relational databases
+- Structured data
+- then export data
+
+
+<img src="Note%20Images/Tools%20Ranking%204.png" alt="drawing" style="height:200px;"/>
+
+#### RDBMS - Relational Database Management System
+- Orcale Database
+- Microsoft SQL Server
+- MySQL - open source and free
+- PostgreSQL - open source and free
+
+> SQL helps minimize data redundancy by using connected tables.
+
+|Graphical User Interface GUI|Text|
+|-|-|
+|SQL Developer|Any command line interface|
+|SQL Server|Any IDE|
+|Management Studio||
+|Toad, etc||
+
+#### Basic Command
+* `SELECT` - choose cases
+* `FROM` - which table from
+* `WHERE` - conditions
+* `ORDER BY` - way of putting it tobgether
+
+pull out information and send the data to you program of choice (ex. R or Python)
+
+#### In sum
+- For relational databases
+- Basic commands are useful
+- Data typically exported to other propgram for analysis
+
+### C, C++ & Java
+-You can find these languages in the bedrock: the absolute fundamental layer that makes Data science possible
+- use this if time is of the essence
+#### C/C++
+- C is from 1960s
+- C++ is from 1980s
+- very wide usage
+- fast and stable - used as benchmark how fast is a language. server used
+- can be used in R
+
+#### Java
+- based on C/C++
+- WORA: Write Once, Run Anywhere
+- MOst popular language overall against all tech situations
+
+#### Who uses it?
+|Engineers|Analyst|
+|-|-|
+|Engineeres and developers deal with the inner workings or back end of data science|Typically don't do hands-on work with foundation; more work on the front end|
+
+#### In sum
+- C, C++ and Java for foundation back end. Data's back end
+- Fast and reliable
+- Typically for engineers
+
+###  Bash
+- Old tools and still uised productively with new data
+
+#### Command line
+- CLI - Comman Line Interface
+- predates monitors
+- method of interacting, not a language
+
+#### Shells
+- shell = language
+- Macs and Linux - Bash:  Bourne Again Shell
+- Windows: PowerShell
+- Boune shell, C shell, Z shell, fish, etc.
+
+#### Things to know
+1. Prompt - indicates that you should type your command here. In bash it is  `$`
+2. One line at a time
+3. You can run a script wihich is a text document
+
+#### Utilities
+- specific programs that accomplish specific tools
+
+Built-ins
+- installed
+- examples of utilities:
+1. cat
+2. awk
+3. grep
+4. sed
+5. head and tail
+5. sort and uniq
+6. wc
+7. printf
+
+Installables
+- other commandline utilities you can add
+1. jq
+2. json2csv
+3. Rio
+4. BigMLer
+
+#### In sum:
+- command line survives because it is extremely effective with data
+0 utilities are fast and easy
+0 active development of utilities
+
+### Regex
+- needles in haystack
+- cryptic
+- ex. finding out if its a valid email address
+```
+^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$
+```
+- way of **pattern matching** 
+- specific or general pattern
+- you can export them to another program for analysis
+
+<img src="Note%20Images/Regex%201.png" alt="drawing" style="height:200px;"/>
+
+#### Elements
+- Literals
+- Metacharacters - code that gives representation
+- escape sequences
+- search expression
+- target string
+
+<img src="Note%20Images/Regex%202.png" alt="drawing" style="height:200px;"/>
+
+> Power come when you combine these
+#### [Regex golf](regex.alf.nu) 
+- exercise/ practice
+- match all words on the left
+
+#### In sum:
+- Find thre right data
+- Powerful and flexible
+- Cryptic but can be fun
+
+## Conclusion - Next steps
+- Get some tools
+- Data Tools != Data Science. It is part od Data Science
+- **Apps** - Excel and Tableu
+- **Code** - R and Python
+- **Utilities** - Bash and regex
+- **Domain** - Field experience, intimate understanding of particular domain
+
+> Get what's best for *your* needs and *your* style. Tools are means to an end. Focus on the goa
+
+> Goal is always the meaning.
+
+# Mathematics in Data Science
