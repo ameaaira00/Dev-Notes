@@ -1615,4 +1615,183 @@ Installables
 
 > Goal is always the meaning.
 
+01/21/23
 # Mathematics in Data Science
+>You need math because it allows you to...
+1. Know which procedures to use and why
+2. KNow what to do when things don't work right
+3. Some math is easier and quicker bu hand than computer
+
+**Algebra**
+- Elementary algebra
+- Linear (matrix) algebra
+- Systems of linear equations
+
+**Topics covered:**
+- Calculus
+- Big O
+- Probability
+- Bayes
+## In sum
+- need math for good Data science
+- Diagnose problems, etc
+- Do by hand or computer
+
+## Foundations
+### Elementary algebra
+al-gabr = "restoration"
+
+#### Salary 
+$Salary = Constant\ avarage\ everybody\ started\ with + Years + Bargaining\ skills + Hours\ day\ work\ per\ week + Error$
+
+or
+
+$S=C+Y+B+H+E$
+
+or
+
+$y_i=\beta_0+\beta_{1}x_{1i}+\beta_{2}x_{2i}+\beta_{3}x_{3i}+\epsilon_{i}$
+
+- $y_i$ - outcome $y$ for person i
+- $\beta_0$ - intercept or average
+- $\beta_n$ coefficient for variable n
+- $x_{mi}$ score for person i
+- $\epsilon_{i}$ - error for person i
+
+#### In sum
+- algebra is vital to Data science
+- combine multiple scores
+- easy for one case at a time
+
+### Linear (matrix) algebra
+- aka Matrix algebra
+
+#### Terms
+- Scalar - one number
+- Vector - row/ column of numbers
+- Matrix - many rows and columns
+> Machines loves matrices
+
+$Salary = Constant\ avarage\ everybody\ started\ with + Years + Bargaining\ skills + Hours\ day\ work\ per\ week + Error$
+
+<img src="Note%20Images/Linear%20algebra%201.png" alt="drawing" style="height:200px;"/>
+
+
+#### In sum
+- computer uses matrices
+- conceptually simpler
+- compact notation
+### Systems of linear equations
+SOlving for many unknows simultaneuously
+- Interlocked $x$ depends on $y$ but $y$ also depends on $x$
+
+<img src="Note%20Images/Systems%201.png" alt="drawing" style="height:200px;"/>
+
+*Solve for x forst then solve for y. Substitute then the valiue of y in the first equation*
+
+#### Graphing equation
+<img src="Note%20Images/Systems%202.png" alt="drawing" style="height:200px;"/>
+
+#### In sum
+- balance several unknows
+- can solve by hand
+- easy with linear algebra
+
+## Calculus
+- calculus is latin for stone
+### Importance
+- Basis - least squares regression, probability distributions
+- Change - Measuring quantities or rates that change over time
+- Min/Max - finding the maxima and minima of functions in optimizaing
+
+### Two kinds of calculus
+|Differential|Integral|
+|-|-|
+|Rates of change at a specific time|Quantity at specific time given rate of change|
+|AKA "the calculus of change"|AKA "the calculus of accumulation"|
+
+### Derivative 
+- slope
+- can use to optimize decision
+
+### In sum:
+- calculus is vital
+- foundation of statistics
+- needed for optimization
+
+### Calculus & optimization
+> Math meets reality
+Calculus makes it possible to find values that **maximize** or **minimize** outcomes.
+
+ex. sales as a function of price
+
+$revenue = sales\ \times\ price$
+> find maximum revenue using calculus. Change price and increase revenue.
+
+#### In sum:
+- calculus finds min/max
+- allows optimization
+- better business decisions
+
+## Data Principles
+### Big-O
+- the speed of the operation
+- the growth rate  of a function is its **"order"**
+- "Big O" gives rate
+- surprising differences
+
+#### Different kinds of growth rate 
+fastest to slowest
+- $O(1)$ - Constant
+- $O(log(n))$ - Logarithmic 
+- $O(n)$ - Linear 
+- $O(n\ log(n))$ - Loglinear
+- $O(n^2)$ - Quadratic
+- $O(2^n)$ - Exponential  
+- $O(n!)$ - Factorial
+
+#### Sorting method
+Insertion sort
+- Best: $O(n)$
+- Avg: $O(n^2)$
+
+Selection sort
+- Best: $O(n^2)$
+- Avg: $O(n^2)$
+#### In sum
+- functions vary in speed
+- some are inconsistent
+- be aware of demands of what you're doing
+
+## Probability
+- what are the odds?
+- rage from 0 to 1
+- $P(A)$ - probability of A
+- $P(B)$ - probability of B
+- $P(S)=1$ - probability of space. 100%
+- $P(~A)=1=P(A)$
+
+### Conditional Proabbility
+- | - pipe assuming that
+- $P(A|B)$ - probability of A if B is true
+- Probabilities of Type I and II errors in hypothesis testing
+
+### Adding probabilities
+$P(A\ or\ B) = P(A)+P(B)-P(A\&B)$
+
+Note: If A and B are discjoint 
+$P(A\& B) = 0$
+
+### Multiplication for probabilities
+$P(A\&B) = P(A)+P(B|A)$
+If A and B are independer then $P(B|A)=P(B)$
+
+### In sum:
+- probability is not always intuitive
+- conditional values help
+- arithmetic can surprise
+
+# Statistics in Data Science
+
+
+
